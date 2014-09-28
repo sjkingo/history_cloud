@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Tag cloud</title>
+    <style type="text/css">
+    #wrapper {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+    #cloud {
+        padding: 2px;
+        line-height: 3em;
+        text-align: justify;
+    }
+    #cloud li {
+        display: inline;
+    }
+    #cloud span {
+        margin: 0.3em;
+    }
+    h3 {
+        text-align: center;
+        color: #666666;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h3>Tag cloud for <tt>{{ history_file }}</tt></h3>
+        <br>
+        <ul id="cloud">
+        {% for tag, count, size, weight in tags %}
+        <li><span style="font-size: {{ size }}; font-weight: {{ weight }};" title="{{ count }} times">{{ tag }}</span></li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

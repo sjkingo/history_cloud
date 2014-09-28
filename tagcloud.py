@@ -38,7 +38,7 @@ def compute_counts():
 def make_weights(tag_list):
     """Takes a list of (tag, count) and returns a new list with (tag, count, font_size, font_weight)."""
 
-    max_value = float(max(map(lambda x: x[1], tag_list)))
+    max_value = max(map(lambda x: x[1], tag_list))
 
     def font_size(value):
         size = math.log(value) / math.log(max_value) * (MAX_FONT_SIZE - MIN_FONT_SIZE) + MIN_FONT_SIZE

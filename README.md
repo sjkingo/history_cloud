@@ -4,7 +4,7 @@ Creates a pretty "tag" cloud of your bash history.
 
 It requires the excellent [Jinja2 library](https://pypi.python.org/pypi/Jinja2).
 
-### Example
+### How to use
 
 ```
 $ virtualenv history_cloud && cd history_cloud

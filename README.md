@@ -14,3 +14,9 @@ $ git clone https://github.com/sjkingo/history_cloud.git
 $ cd history_cloud
 $ ./tagcloud.py > output.html
 $ $BROWSER output.html
+```
+
+### Sample
+
+![Sam's bash history](https://raw.githubusercontent.com/sjkingo/history_cloud/master/sample.png)
+
